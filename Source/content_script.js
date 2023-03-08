@@ -40,7 +40,7 @@ function handleText(textNode)
 	var v = textNode.nodeValue;
 
 	v = v.replace(/\bbeautiful\b/g, "harshada");
-	v = v.replace(/\bBeautiful\b/g, "Harshada
+	v = v.replace(/\bBeautiful\b/g, "Harshada");
 	textNode.nodeValue = v;
 }
 
