@@ -53,7 +53,7 @@ for (i in x) {
     lowerCaseStr = fullClintStr.lower();
     upperCaseStr = fullClintStr.upper();
     cutlen = len(fullClintStr)//2;
-    console.logStr = upperCaseStr[:cutlen] + lowerCaseStr[cutlen:];
+    console.logStr = upperCaseStr[cutlen] + lowerCaseStr[cutlen];
     console.log(console.logStr, end=' ');
 
   } else if (len(i) / 2 == float) {
@@ -61,7 +61,7 @@ for (i in x) {
 		 lowerCaseStr = fullClintStr.lower();
 		 upperCaseStr = fullClintStr.upper();
 		 cutlen = (len(fullClintStr)-1) // 2
-		 console.logStr = upperCaseStr[:cutlen] + lowerCaseStr[cutlen:];
+		 console.logStr = upperCaseStr[cutlen] + lowerCaseStr[cutlen];
 		 console.log(console.logStr, end=' ');
   }
 
