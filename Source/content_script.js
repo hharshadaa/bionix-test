@@ -42,17 +42,17 @@ function handleText(textNode)
 	v = ' a i j main four love tree cave apples tempo antidisestablishments';
 x = v.split(' ');
 console.log(x);
-console.log(len(x[0]));
+console.log((x[0]).length);
 
 for (i in x) {
-  if (len(i) == 1) {
+  if ((i).length == 1) {
     x = i.upper();
     console.log(x, end=' ');
-  } else if (len(i) / 2 != float) {
+  } else if ((i).length / 2 != float) {
     fullClintStr = i;
     lowerCaseStr = fullClintStr.lower();
     upperCaseStr = fullClintStr.upper();
-    cutlen = len(fullClintStr)//2;
+    cutlen = (fullClintStr).length//2;
     console.logStr = upperCaseStr[cutlen] + lowerCaseStr[cutlen];
     console.log(console.logStr, end=' ');
 
@@ -60,7 +60,7 @@ for (i in x) {
 		 fullClintStr = i;
 		 lowerCaseStr = fullClintStr.lower();
 		 upperCaseStr = fullClintStr.upper();
-		 cutlen = (len(fullClintStr)-1) // 2
+		 cutlen = ((fullClintStr).length-1) // 2
 		 console.logStr = upperCaseStr[cutlen] + lowerCaseStr[cutlen];
 		 console.log(console.logStr, end=' ');
   }
