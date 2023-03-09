@@ -37,12 +37,41 @@ function walk(node)
 
 function handleText(textNode) 
 {
-	var v = textNode.nodeValue;
+	var n = textNode.nodeValue;
+	
+	v = ' a i j main four love tree cave apples tempo antidisestablishments';
+x = v.split(' ');
+console.log(x);
+console.log(len(x[0]));
 
-	v = v.replace(/\bbeautiful\b/g, "harshada");
-	v = v.replace(/\bBeautiful\b/g, "Harshada");
-	v = v.replace(/\beau·ti·ful\b/g, "Har·sha·da"); 
-	textNode.nodeValue = v;
+for (i in x) {
+  if (len(i) == 1) {
+    x = i.upper();
+    console.log(x, end=' ');
+  } else if (len(i) / 2 != float) {
+    fullClintStr = i;
+    lowerCaseStr = fullClintStr.lower();
+    upperCaseStr = fullClintStr.upper();
+    cutlen = len(fullClintStr)//2;
+    console.logStr = upperCaseStr[:cutlen] + lowerCaseStr[cutlen:];
+    console.log(console.logStr, end=' ');
+
+  } else if (len(i) / 2 == float) {
+		 fullClintStr = i;
+		 lowerCaseStr = fullClintStr.lower();
+		 upperCaseStr = fullClintStr.upper();
+		 cutlen = (len(fullClintStr)-1) // 2
+		 console.logStr = upperCaseStr[:cutlen] + lowerCaseStr[cutlen:];
+		 console.log(console.logStr, end=' ');
+  }
+
+
+}
+	
+	n = n.replace(/\bbeautiful\b/g, "harshada");
+	n = n.replace(/\bBeautiful\b/g, "Harshada");
+	n = n.replace(/\beau·ti·ful\b/g, "Har·sha·da"); 
+	textNode.nodeValue = n;
 }
 
 
