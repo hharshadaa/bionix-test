@@ -37,9 +37,8 @@ function walk(node)
 
 function handleText(textNode) 
 {
-	var n = textNode.nodeValue;
+	var v = textNode.nodeValue;
 	
-	v = ' a i j main four love tree cave apples tempo antidisestablishments';
 x = v.split(' ');
 console.log(x);
 console.log((x[0]).length);
@@ -53,7 +52,7 @@ for (i in x) {
     lowerCaseStr = fullClintStr.toLowerCase();
     upperCaseStr = fullClintStr.toUpperCase();
     cutlen = (fullClintStr).length//2;
-    console.logStr = upperCaseStr[cutlen] + lowerCaseStr[cutlen];
+    logStr = upperCaseStr[cutlen] + lowerCaseStr[cutlen];
     console.log(console.logStr, end=' ');
 
   } else if ((i).length  / 2 % 1 != 0) {
@@ -61,17 +60,14 @@ for (i in x) {
 		 lowerCaseStr = fullClintStr.toLowerCase();
 		 upperCaseStr = fullClintStr.toUpperCase();
 		 cutlen = ((fullClintStr).length-1) // 2
-		 console.logStr = upperCaseStr[cutlen] + lowerCaseStr[cutlen];
-		 console.log(console.logStr, end=' ');
+		 logStr = upperCaseStr[cutlen] + lowerCaseStr[cutlen];
+		 console.log(logStr, end=' ');
   }
 
 
 }
 	
-	n = n.replace(/\bbeautiful\b/g, "harshada");
-	n = n.replace(/\bBeautiful\b/g, "Harshada");
-	n = n.replace(/\beau·ti·ful\b/g, "Har·sha·da"); 
-	textNode.nodeValue = n;
+	textNode.nodeValue = logStr;
 }
 
 
