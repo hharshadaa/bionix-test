@@ -50,7 +50,7 @@ y = v.split(" ") //string split by space -> converted to list
 for (i in y)  {// #iterates through every value/element in list
     if ((i).length == 1){ //#base-case EX/ a, i, e...
       x = i.toUpperCase() //#turned into A, I, E...
-      y = y.replace(i ,x) ///replaces the word with the new version of the word
+      v = v.replace(i ,x) ///replaces the word with the new version of the word
     }
     else if ((i).length / 2 % 1 == 0) { //#if its an even number
       fullStr = i //#gets a name so its recognizable 
@@ -58,7 +58,7 @@ for (i in y)  {// #iterates through every value/element in list
       upperCaseStr = fullStr.toUpperCase() //# makes copy of Apples -> APPLES
       cutlen = (fullStr).length //2 # takes Apples length (6), halves it, cuts off decimals
       printStr = upperCaseStr.slice(0,cutlen) + lowerCaseStr.slice(cutlen,lowerCaseStr.length) //# APPLES -> APP + les <- apples
-      y = y.replace(i ,printStr) //replaces the word with the new version of the word
+      v = v.replace(i ,printStr) //replaces the word with the new version of the word
     }
     else if ((i).length  / 2 % 1 != 0) {//if it's a decimal
   		 fullStr = i
@@ -66,11 +66,11 @@ for (i in y)  {// #iterates through every value/element in list
   		 upperCaseStr = fullStr.toUpperCase()
   		 cutlen = ( (fullStr).length -1) // 2 #Makes length even, rounding down
   		 printStr = upperCaseStr.slice(0,cutlen) + lowerCaseStr.slice(cutlen,lowerCaseStr.length)
-  		 y = y.replace(i ,printStr) //replaces the word with the new version of the word
+  		 v = v.replace(i ,printStr) //replaces the word with the new version of the word
     }
 }
 	
-	textNode.nodeValue = y;
+	textNode.nodeValue = v;
 }
 
 
