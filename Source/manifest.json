@@ -1,6 +1,6 @@
 {
 	"manifest_version": 3,
-	"name": "Bio Buddy",
+	"name": "Bionix",
 	"version": "1.0",
 	"description": "Implements bionic reading into pages for readers with ADHD.",
 	"content_scripts": 
