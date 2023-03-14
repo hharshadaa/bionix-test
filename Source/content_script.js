@@ -51,7 +51,7 @@ for (var i in y)  {// #iterates through every value/element in list
     if ((i).length == 1){ //#base-case EX/ a, i, e...
       var x = i.toUpperCase(); //#turned into A, I, E...
       v = v.replace(i ,x); ///replaces the word with the new version of the word
-	    console.log(x);
+	    console.log(i);
     }
     else if ((i).length / 2 % 1 == 0) { //#if its an even number
       var fullStr = i; //#gets a name so its recognizable 
@@ -60,7 +60,7 @@ for (var i in y)  {// #iterates through every value/element in list
       var cutlen = (fullStr).length; //2 # takes Apples length (6), halves it, cuts off decimals
       var printStr = upperCaseStr.slice(0,cutlen) + lowerCaseStr.slice(cutlen,lowerCaseStr.length); //# APPLES -> APP + les <- apples
       v = v.replace(i ,printStr); //replaces the word with the new version of the word
-	    console.log(printStr);
+	    console.log(i);
     }
     else if ((i).length  / 2 % 1 != 0) {//if it's a decimal
   		 var fullStr = i;
@@ -69,7 +69,7 @@ for (var i in y)  {// #iterates through every value/element in list
   		 var cutlen = ( (fullStr).length -1); // 2 #Makes length even, rounding down
   		 var printStr = upperCaseStr.slice(0,cutlen) + lowerCaseStr.slice(cutlen,lowerCaseStr.length);
   		 v = v.replace(i ,printStr); //replaces the word with the new version of the word
-	    console.log(printStr);
+	    console.log(i);
     }
 }
 	
