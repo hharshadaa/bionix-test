@@ -38,7 +38,7 @@ function walk(node)
 function handleText(textNode) 
 {
 	var v = textNode.nodeValue;
-	
+	console.log(v);
 	
 	
 y = v.split(" ") //string split by space -> converted to list
