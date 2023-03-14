@@ -2,7 +2,7 @@
 	"manifest_version": 3,
 	"name": "Bionix",
 	"version": "1.0",
-	"description": "Implements bionic reading into pages for readers with ADHD.",
+	"description": "Implements bionic reading into pages for neurodivergent readers.",
 	"content_scripts": 
 	[
 		{
