@@ -69,7 +69,7 @@ function handleText(textNode)
   		 var lowerCaseStr = fullStr.toLowerCase();
 		var upperCaseStr = fullStr.toUpperCase();
 		var cutlen = ((fullStr).length - 1) / 2;// #Makes length even, rounding down
-		var printStr = upperCaseStr + lowerCaseStr.slice(cutlen, lowerCaseStr.length);
+		var printStr = upperCaseStr.slice(0, cutlen) + lowerCaseStr.slice(cutlen, lowerCaseStr.length);
 		v = v.replace(y[i] ,printStr); //replaces the word with the new version of the word
 		console.log(printStr);
 		
