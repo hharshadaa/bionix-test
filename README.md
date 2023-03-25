@@ -1,7 +1,7 @@
 Bionix
 =============
 
-![](logo.png)
+![](https://i.imgur.com/GguBI9O.png)
 
 Chrome extension that replaces the the first half of the words to bold script.
 
