@@ -1,4 +1,4 @@
-bionix
+Bionix
 =============
 
 ![](logo.png)
