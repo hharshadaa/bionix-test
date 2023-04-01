@@ -10,7 +10,7 @@
 
 //document.body.innerHTML = newSentence;
 
-const sentence = document.querySelector('p:first-of-type').innerText;
+const sentence = document.querySelector('p:first-of-type').innerHTML;
 const words = sentence.split(" ");
 let newSentence = "";
 
