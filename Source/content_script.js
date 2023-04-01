@@ -10,7 +10,7 @@
 
 //document.body.innerHTML = newSentence;
 
-const sentence = document.querySelector('p:first-of-type').innerHTML;
+const sentence = document.body.innerText;
 const words = sentence.split(" ");
 let newSentence = "";
 
@@ -20,4 +20,5 @@ words.forEach(word => {
   newSentence += "<span style='font-weight:bold'>" + firstHalf + "</span>" + secondHalf + " ";
 });
 
-document.querySelector('p:first-of-type').innerHTML = newSentence;
+document.body.innerHTML = newSentence;
+
