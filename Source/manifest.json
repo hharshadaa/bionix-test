@@ -1,12 +1,15 @@
 {
-  "name": "My Extension",
-  "version": "1.0",
-  "manifest_version": 2,
-  "description": "This is my extension.",
-  "content_scripts": [
-    {
-      "matches": ["<all_urls>"],
-      "js": ["content.js"]
-    }
-  ]
+	"manifest_version": 3,
+	"name": "Bionix",
+	"version": "1.0",
+	"description": "Implements bionic reading into pages for neurodivergent readers",
+	"content_scripts": 
+	[
+		{
+			"matches": ["*://*/*"],
+			"js": ["jquery-3.6.4.min.js",
+			       "content_script.js"],
+			"run_at": "document_end"
+		}
+	]
 }
