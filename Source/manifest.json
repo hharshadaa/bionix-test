@@ -3,6 +3,7 @@
   "version": "1.0",
   "description": "This extension modifies the content of web pages.",
   "permissions": ["activeTab"],
+  "manifest_version": 2,
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
