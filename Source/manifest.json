@@ -1,0 +1,12 @@
+{
+  "name": "My Chrome Extension",
+  "version": "1.0",
+  "description": "This extension modifies the content of web pages.",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}
